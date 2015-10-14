@@ -13,6 +13,11 @@
     "build": "babel ./src --out-dir ./lib",
     "prepublish": "npm run build"
   },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "keywords": [
     "react",
     "react-component",
